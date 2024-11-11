@@ -16,9 +16,7 @@ void board(){
     }
 
 }
-void iscorner(){
-    
-}
+
 
 bool checkmove(int place){
     int x=(place-1)/3;
