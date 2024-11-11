@@ -1,1 +1,1 @@
-# basic-tictactoe
+# basic-tictactoe (pass and play)
