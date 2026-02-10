@@ -102,8 +102,22 @@ int main(){
     std::cout<<"The squares :\n\n";
     board();
     int place;
-    for(int i=0;i<9;i++){
-    std::cout<<"Player : "<<turn<<std::endl;
+    
+
+
+
+    while(true){
+    std::cout<<"\n\n1.Start the game\n2.Exit"<<std::endl;
+    std::cout<<"Enter your choice : ";
+    int choice;
+    std::cin >> choice;
+
+
+    
+   switch(choice){
+     case 1:{
+        for(int i=0;i<9;i++){
+    std::cout<<"\n\nPlayer : "<<turn<<std::endl;
     std::cout<<"Enter the square (1-9) : ";
     std::cin>>place;
     if(checkmove(place)){
@@ -129,5 +143,19 @@ int main(){
         break;
     } 
 }
+
+        break;
+     }
+
+     case 2:{
+        std::cout<<"....Terminating successfully!!";
+        return 0;
+     }
+     default:{
+        std::cout<<"Please select a valid choice!!";
+     }
+
+   }
+     }
 std::cout<<"\n\nThe END";
 }
